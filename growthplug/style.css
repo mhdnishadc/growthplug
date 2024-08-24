@@ -1,0 +1,794 @@
+
+.header-buttons {
+    position: absolute;
+    top: 10px; /* Adjust the value based on your design */
+    right: 10px; /* Adjust the value based on your design */
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 5px 10px;
+    background-color: #007BFF; /* Example background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #0056b3; /* Example hover color */
+}
+
+.container {
+    position: relative;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Adjust based on your design */
+    font-weight: bold;
+}
+.fullscreen-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    overflow: hidden; /* Ensures no overflow */
+}
+
+.fullscreen-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+    z-index: -1; /* Sends the image behind any other content, if needed */
+}
+.two-column-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%;
+    padding: 50px 0; /* Add some padding around the section */
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensure the image scales correctly */
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-column h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text-column p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust the height as needed */
+    background-color: #f8f9fa; /* Background color for the section */
+    padding: 50px 0;
+}
+
+.welcome-box {
+    background-color: #0d6efd; /* Blue background color */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px;
+    width: 100%;
+}
+
+.welcome-box h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.welcome-box p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ffc107; /* Yellow background color */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+.specialties-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.specialties-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.specialties-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.specialty-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    position: relative;
+    width: 300px;
+    text-align: center;
+    padding-top: 50px; /* Space for the icon */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px; /* Position it above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container img {
+    max-width: 40px; /* Ensures the image fits inside the circle */
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+.specialty-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 40px; /* Space from the icon */
+}
+
+.specialty-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.specialty-card a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.specialty-card a:hover {
+    color: #0056b3;
+}
+
+.specialties-button-container {
+    margin-top: 40px;
+}
+
+.specialties-button-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.specialties-button-container button:hover {
+    background-color: #e0a800;
+}
+/* Full-Screen Image Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-image: url('./images/palle.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #0056b3;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.hero-button:hover {
+    background-color: #004494;
+}
+/* Two-Column Section Image Styling */
+.image-column img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+
+.meet-doctor-section {
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.meet-doctor-section h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #2c5ca9;
+    margin-bottom: 20px;
+}
+
+.two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between the columns */
+   
+}
+.left-column{
+    margin-left: 200px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    gap: 10px;
+    
+}
+
+.left-column img,
+.right-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 500px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.right-column {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.overlay button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #e0a800;
+}
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #004289;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #004289;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.feature-content img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.feature-content p {
+    color: #004289;
+    font-size: 14px;
+    text-align: left;
+}
+.reviews-section {
+    position: relative;
+    background-image: url('./images/Cosmetic\ Dentistry\ -\ Dallas\ Cosmetic\ Dental\ -\ Dallas\,\ TX\ __.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+}
+
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004289;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.review-content h3 {
+    color: #dd4b39; /* Google Red */
+    margin: 0;
+}
+
+.review-content .name {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.review-content .date {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.review-content .text {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.rating {
+    color: gold;
+    font-size: 20px;
+}
+.office-info {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+
+.office-details {
+    text-align: left;
+    color: #004289;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.office-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.office-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.office-details h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.office-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.office-details ul li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+    color: #004289;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: auto;
+   
+
+}
+
+.footer-logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #004289;
+}
+header {
+    text-align: center;
+    
+}
+
+header .insta {
+    font-size: 18px;
+    color: #004289;
+    margin-top: 200px;
+
+}
+footer {
+    background-color: #024e8c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-left ul li {
+    margin: 5px 0;
+}
+
+.footer-left ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.appointment-btn {
+    background-color: #f5a623;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.appointment-btn:hover {
+    background-color: #d4901d;
+}
+
+.footer-center img {
+    max-width: 150px;
+}
+
+.footer-right p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.language-select {
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 3px;
+}
+.blue-banner {
+    background-color: #00a9e0; /* Blue color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.blue-banner .icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.blue-banner a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.blue-banner a:hover {
+    color: #c0e1f4;
+}
+
+
+@media (max-width: 768px) {
+    .two-column-section {
+        flex-direction: column;
+    }
+
+    .column {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .two-column-section {
+        flex-direction: column;
+    }
+
+    .two-column-layout {
+        flex-direction: column;
+    }
+
+    .two-column-layout .left-column, 
+    .two-column-layout .right-column {
+        max-width: 100%;
+    }
+
+    .specialties-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-section .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
